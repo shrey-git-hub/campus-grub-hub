@@ -3,8 +3,15 @@ import { ArrowRight } from "lucide-react";
 import heroImage from "@/assets/hero-meals.jpg";
 
 export default function Hero() {
+  const scrollToSection = (href: string) => {
+    const element = document.querySelector(href);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
+
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-hero">
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-hero pt-20">
       <div className="container mx-auto px-4 py-20 md:py-32">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8 text-center lg:text-left">
@@ -22,11 +29,21 @@ export default function Hero() {
               around campus. $8-12 per meal, zero commitment.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Button variant="hero" size="lg" className="text-lg">
+              <Button
+                variant="hero"
+                size="lg"
+                className="text-lg"
+                onClick={() => scrollToSection("#pricing")}
+              >
                 Get Started <ArrowRight className="ml-2" />
               </Button>
-              <Button variant="outline" size="lg" className="text-lg">
-                View Menu
+              <Button
+                variant="outline"
+                size="lg"
+                className="text-lg"
+                onClick={() => scrollToSection("#features")}
+              >
+                View Features
               </Button>
             </div>
             <div className="flex gap-8 justify-center lg:justify-start text-center lg:text-left">
