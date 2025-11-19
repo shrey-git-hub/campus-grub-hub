@@ -17,20 +17,23 @@ export default function Footer() {
             <p className="opacity-80 mb-4">
               Healthy, affordable meals made for student life at Northeastern University.
             </p>
+            <p className="text-sm opacity-70">
+              Built by students, for students. 🍽️
+            </p>
           </div>
           <div>
             <h4 className="font-semibold mb-4 text-lg">Quick Links</h4>
             <ul className="space-y-2 opacity-80">
               <li>
                 <a
-                  href="#features"
+                  href="#menu"
                   onClick={(e) => {
                     e.preventDefault();
-                    scrollToSection("#features");
+                    scrollToSection("#menu");
                   }}
                   className="hover:text-primary transition-colors cursor-pointer"
                 >
-                  Our Meals
+                  Our Menu
                 </a>
               </li>
               <li>
@@ -47,14 +50,67 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="#how-it-works"
+                  href="#locations"
                   onClick={(e) => {
                     e.preventDefault();
-                    scrollToSection("#how-it-works");
+                    scrollToSection("#locations");
                   }}
                   className="hover:text-primary transition-colors cursor-pointer"
                 >
-                  How It Works
+                  Locations
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#about"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    scrollToSection("#about");
+                  }}
+                  className="hover:text-primary transition-colors cursor-pointer"
+                >
+                  About Us
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 className="font-semibold mb-4 text-lg">Resources</h4>
+            <ul className="space-y-2 opacity-80">
+              <li>
+                <a
+                  href="#sustainability"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    scrollToSection("#sustainability");
+                  }}
+                  className="hover:text-primary transition-colors cursor-pointer"
+                >
+                  Sustainability
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#community"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    scrollToSection("#community");
+                  }}
+                  className="hover:text-primary transition-colors cursor-pointer"
+                >
+                  Community
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#support"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    scrollToSection("#support");
+                  }}
+                  className="hover:text-primary transition-colors cursor-pointer"
+                >
+                  Support
                 </a>
               </li>
               <li>
@@ -69,15 +125,6 @@ export default function Footer() {
                   FAQ
                 </a>
               </li>
-            </ul>
-          </div>
-          <div>
-            <h4 className="font-semibold mb-4 text-lg">Support</h4>
-            <ul className="space-y-2 opacity-80">
-              <li><a href="#" className="hover:text-primary transition-colors">Contact Us</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Delivery Info</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Allergen Info</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Terms & Privacy</a></li>
             </ul>
           </div>
           <div>
