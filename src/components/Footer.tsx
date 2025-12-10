@@ -19,6 +19,7 @@ export default function Footer() {
             </p>
             <p className="text-sm opacity-70">
               Built by students, for students. 🍽️
+              <p>&copy; © Website developed and hosted by Shreyas Wankhade © </p>
             </p>
           </div>
           <div>
@@ -152,7 +153,8 @@ export default function Footer() {
           </div>
         </div>
         <div className="border-t border-background/20 pt-8 text-center opacity-80">
-          <p>&copy; 2024 CampusEats. Made by Northeastern students, for Northeastern students.</p>
+          <p>&copy; 2025 CampusEats. Made by Northeastern students, for Northeastern students.</p>
+
         </div>
       </div>
     </footer>
