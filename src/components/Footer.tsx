@@ -19,7 +19,7 @@ export default function Footer() {
             </p>
             <p className="text-sm opacity-70">
               Built by students, for students. 🍽️
-              <p>&copy; © Website developed and hosted by Shreyas Wankhade © </p>
+              <p>© Website developed and hosted by Shreyas Wankhade © </p>
             </p>
           </div>
           <div>
